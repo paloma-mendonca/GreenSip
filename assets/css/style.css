@@ -1,0 +1,81 @@
+.brand-title {
+    font-family: "Fleur De Leah", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 34px;
+    padding-top: unset;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 1vw;
+    color:  rgb(25, 135, 84);
+    justify-self: start;
+}
+
+.navbar {
+    background-color: rgb(40, 40, 40);
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#searchForm {
+    margin-left: auto
+}
+
+#menu{
+    background-color: rgb(40, 40, 40);
+}
+
+.searchbar {
+    border: 1px solid rgb(25, 135, 84);
+    background-color: rgb(40, 40, 40);
+}
+
+.searchbar:hover {
+    border: 1px solid rgb(25, 135, 84);
+    box-shadow: 0 0 0 0.2rem rgba(81, 172, 81, 0.25);
+}
+
+.searchbar:focus {
+    border-color: rgb(25, 135, 84);
+    background-color: rgb(40, 40, 40);
+    box-shadow: 0 0 0 0.2rem rgba(81, 172, 81, 0.25);
+}
+
+.collapse-button{
+    color: rgb(25, 135, 84);
+    background-color: transparent;
+    border: none;
+}
+
+.collapse-button:hover {
+   color: rgb(255, 255, 255);
+}
+
+.collapse-button:active {
+    color: rgb(255, 255, 255);
+}
+
+p {
+    font-family: "Carattere", cursive;
+    font-size:xx-large;
+}
+
+.bule {
+    height: 90vh;
+    width: 35vw;
+}
+
+.bule-section {
+    background-color: rgb(220, 248, 220);
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    max-width: 50%;
+}
