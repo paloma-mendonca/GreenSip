@@ -1,3 +1,7 @@
+body{
+    background-color: rgb(220, 248, 220);
+}
+
 .brand-title {
     font-family: "Fleur De Leah", cursive;
     font-weight: 600;
@@ -13,16 +17,28 @@
 }
 
 .navbar {
+    position: sticky;
+    /* background-color: rgb(239, 217, 194); */
     background-color: rgb(40, 40, 40);
     padding-top: 0px;
     padding-bottom: 0px;
 }
 
 #searchForm {
-    margin-left: auto
+    margin-left: auto;
+}
+
+@media(max-width: 576px){
+    .searchbar{
+        width: 100px;
+    }
+    #searchForm {
+        margin-left: 0px;
+    }
 }
 
 #menu{
+    /* background-color: rgb(239, 217, 194); */
     background-color: rgb(40, 40, 40);
 }
 
@@ -56,26 +72,108 @@
     color: rgb(255, 255, 255);
 }
 
-p {
+p, ul, li {
     font-family: "Carattere", cursive;
-    font-size:xx-large;
+    font-size: xx-large;
 }
 
-.bule {
-    height: 90vh;
-    width: 35vw;
+h1, h2{
+    display: flex;
+    justify-content: center;
+    font-family: "Fleur De Leah", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 34px;
+    color:  rgb(25, 135, 84);
 }
 
 .bule-section {
-    background-color: rgb(220, 248, 220);
+    background-image: url(../images/bule.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 93dvh;
+}
+
+.section {
     display: flex;
+    flex-direction: row;
+    height: 93dvh;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.text-section {
+.section-col {
+    flex: 0 0 auto;
+    width: 40%;
+}
+
+.text-section-col {
+    flex: 0 0 auto;
+    width: 55%;
+    padding: 2rem 2rem 2rem;
+    scrollbar-width: none;
+}
+
+@media (max-width: 1199px) {
+    .bule-section {
+        background-image: url(../images/bule.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 30%;
+        width: auto;
+    }
+    
+    .section {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .section-col {
+        flex: none;
+        width: none;
+    }
+    
+    .text-section-col {
+        flex: 0 0 auto;
+        width: auto;
+        max-height: 70%;
+        padding: 2rem 2rem 2rem;
+    }
+}
+
+.parallax-section {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 2rem;
-    max-width: 50%;
+    flex-flow: row nowrap;
+    width: max-content;
+}
+
+.parallax-text {
+    display: inline;
+    flex: 0 0 auto;
+    width: 45%;
+}
+
+.parallax {
+    max-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overscroll-behavior: none;
+}
+
+.parallax-1 {
+    background-image: url(../images/infusao.jpg);
+    width: 50%;
+    background-position: left;
+    background-size: 60%;
+}
+
+.parallax-2 {
+    background-image: url(../images/cha-verde.webp);
+    width: 50%;
+    background-position: left;
+    background-size: 70%;
 }
